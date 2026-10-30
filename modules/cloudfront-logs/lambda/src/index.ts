@@ -1,6 +1,6 @@
 import { parseLogFile } from "./cloudfront";
 import { putLogEvents } from "./cloudwatch-logs";
-import {type Handler, S3Event} from "aws-lambda"
+import type { Handler, S3Event } from "aws-lambda"
 import util from "util";
 
 export const handler: Handler<S3Event> = async (event, context) => {
